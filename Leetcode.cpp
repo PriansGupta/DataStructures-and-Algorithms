@@ -17,7 +17,8 @@ typedef vector<vl> vvl;
 const int M = 1e9 + 7;
 const int m = 1e9 + 7;
 int a[200005];
-// memset(lookup, 0, sizeof(lookup))
+
+
 int moadd(int a, int b)
 {
     return ((a % m) + (b % m)) % m;
