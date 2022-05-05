@@ -107,13 +107,13 @@ bool isprime(int n)
     return true;
 }
 
-bool vowelCheck(char ch)
-{
-    if (ch == 'a' or ch == 'e' or ch == 'i' or ch == 'o' or ch == 'u' or ch == 'A' or ch == 'E' or ch == 'I' or ch == 'O' or ch == 'U')
-        return true;
+// bool vowelCheck(char ch)
+// {
+//     if (ch == 'a' or ch == 'e' or ch == 'i' or ch == 'o' or ch == 'u' or ch == 'A' or ch == 'E' or ch == 'I' or ch == 'O' or ch == 'U')
+//         return true;
 
-    return false;
-}
+//     return false;
+// }
 
 void solve()
 {
