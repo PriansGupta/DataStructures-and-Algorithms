@@ -107,18 +107,33 @@ bool isprime(int n)
     return true;
 }
 
-// bool vowelCheck(char ch)
-// {
-//     if (ch == 'a' or ch == 'e' or ch == 'i' or ch == 'o' or ch == 'u' or ch == 'A' or ch == 'E' or ch == 'I' or ch == 'O' or ch == 'U')
-//         return true;
 
-//     return false;
-// }
+void solve(){
+    int n;
+    cin>>n;
+    
+    vector<int> a(n);
+    for(int i=0;i<n;i++)
+    cin>>a[i];
+    
+    int q;
+    cin>>q;
+    
+    while(q--){
+        int l,r,x;
+        cin>>l>>r>>x;
 
-void solve()
-{
-   
+        int c=0;
+
+        for(int i=l-1;i<r;i++){
+            if((x^a[i])>(x&a[i]))
+            c++;
+        }
+
+        cout<<c<<"\n";
+    }
 }
+
 int main()
 {
 
