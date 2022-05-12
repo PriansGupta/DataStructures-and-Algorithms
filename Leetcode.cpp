@@ -18,7 +18,6 @@ const int M = 1e9 + 7;
 const int m = 1e9 + 7;
 int a[200005];
 
-
 int moadd(int a, int b)
 {
     return ((a % m) + (b % m)) % m;
@@ -107,30 +106,18 @@ bool isprime(int n)
     return true;
 }
 
+int msb(int n)
+{
+}
 
-void solve(){
-    int n;
-    cin>>n;
-    
-    vector<int> a(n);
-    for(int i=0;i<n;i++)
-    cin>>a[i];
-    
-    int q;
-    cin>>q;
-    
-    while(q--){
-        int l,r,x;
-        cin>>l>>r>>x;
+void solve()
+{
+    ll n, k;
+    cin >> n >> k;
 
-        int c=0;
-
-        for(int i=l-1;i<r;i++){
-            if((x^a[i])>(x&a[i]))
-            c++;
-        }
-
-        cout<<c<<"\n";
+    for(int i=1;i<=n;i++){
+        k++;
+        cout<<k<<" ";
     }
 }
 

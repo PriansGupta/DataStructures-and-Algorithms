@@ -1,1 +1,1 @@
-{"name":"Local: Leetcode","url":"d:\\DSA\\Leetcode.cpp","tests":[{"id":1651678447325,"input":"1\n5\n1 2 3 4 5\n2\n1 5 4\n2 5 2\n","output":"3\n2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA\\Leetcode.cpp","group":"local","local":true}
+{"name":"Local: Leetcode","url":"d:\\DSA\\Leetcode.cpp","tests":[{"id":1651678447325,"input":"2\n4 10\n10 1000000\n","output":"0\n2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA\\Leetcode.cpp","group":"local","local":true}
