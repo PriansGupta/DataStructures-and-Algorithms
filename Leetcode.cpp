@@ -106,18 +106,38 @@ bool isprime(int n)
     return true;
 }
 
-int msb(int n)
-{
-}
-
 void solve()
 {
-    ll n, k;
-    cin >> n >> k;
+    int n, q;
+    cin >> n >> q;
 
-    for(int i=1;i<=n;i++){
-        k++;
-        cout<<k<<" ";
+    vector<int> v(n);
+
+    for (int i = 0; i < n; i++)
+        cin >> v[i];
+
+    sort(v.begin(), v.end());
+    reverse(v.begin(), v.end());
+
+    vector<int> pre(n, 0);
+
+    pre[0] = v[0];
+
+    for (int i = 1; i < n; i++)
+        pre[i] = pre[i - 1] + v[i];
+
+// cout<<lower_bound(pre.begin(),pre.end(),10)-pre.begin()+1<<"\n";
+    while (q--)
+    {
+        int x;
+        cin >> x;
+
+        vector<int>::iterator low;
+        low = lower_bound(pre.begin(), pre.end(), x);
+        if(low==pre.end())
+        cout<<"-1\n";
+        else
+        cout<<low-pre.begin()+1<<"\n";
     }
 }
 
